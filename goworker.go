@@ -6,6 +6,7 @@ import (
 	"strconv"
 	"sync"
 	"time"
+	"strings"
 )
 
 var (
@@ -23,8 +24,8 @@ var (
 )
 
 type Worker struct {
-  Queues  string,
-  IntervalFloat float64,
+  Queues string
+  IntervalFloat float64
   Concurrency int
   Connections int
   Uri string
