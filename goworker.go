@@ -48,6 +48,7 @@ func (w *Worker) Work() error {
   queuesString = w.Queues
   intervalFloat = w.IntervalFloat
   concurrency = w.Concurrency
+  connections = w.Connections
   uri = w.Uri
   namespace = w.Namespace
   exitOnComplete = w.ExitOnComplete
